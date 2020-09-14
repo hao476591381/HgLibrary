@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hg.lib.album.view.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/album_image_placeholder" />
+
+    <LinearLayout
+        android:id="@+id/ll_check"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/album_picture_checkbox_selector"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_isGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/album_gif_tag"
+        android:text="动图"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:visibility="gone"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tv_long_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/album_gif_tag"
+        android:text="长图"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:visibility="gone"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/album_buy"
+        android:drawableStart="@drawable/album_video_icon"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp"
+        android:paddingTop="8dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:visibility="gone"
+        tools:ignore="RtlSymmetry,SmallSp" />
+</com.hg.lib.album.view.SquareRelativeLayout>

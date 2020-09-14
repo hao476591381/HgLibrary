@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/hg_time_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/c0099ff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hg_time_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/c0099ff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hg_time_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/confirm"
+            android:textColor="@color/c0099ff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/c0099ff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+
+        <com.hg.lib.TimerPicker.TimePickerView
+            android:id="@+id/hg_time_year"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.hg.lib.TimerPicker.TimePickerView
+            android:id="@+id/hg_time_month"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.hg.lib.TimerPicker.TimePickerView
+            android:id="@+id/hg_time_day"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.hg.lib.TimerPicker.TimePickerView
+            android:id="@+id/hg_time_hour"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/hg_time_hour_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.hg.lib.TimerPicker.TimePickerView
+            android:id="@+id/hg_time_minute"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/hg_time_minute_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/minute"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

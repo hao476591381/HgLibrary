@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/imge_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@xml/et_bar_shape"
+        android:hint="@string/image_describe"
+        android:textColor="@color/image_overlay_true"
+        android:textSize="14sp"
+        tools:ignore="Autofill,TextFields" />
+
+    <RelativeLayout
+        android:id="@+id/layout_op_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:padding="5dp"
+        tools:visibility="visible">
+
+        <ViewSwitcher
+            android:id="@+id/vs_op_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:measureAllChildren="true"
+            tools:ignore="RelativeOverlap">
+
+            <com.hg.lib.edit.view.IMGColorGroup
+                android:id="@+id/cg_colors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checkedButton="@+id/cr_red"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.hg.lib.edit.view.IMGColorRadio
+                    android:layout_width="@dimen/image_color"
+                    android:layout_height="@dimen/image_color"
+                    android:layout_margin="@dimen/image_color_margin"
+                    android:button="@null"
+                    app:image_color="@color/image_color_red" />
+
+                <com.hg.lib.edit.view.IMGColorRadio
+                    android:layout_width="@dimen/image_color"
+                    android:layout_height="@dimen/image_color"
+                    android:layout_margin="@dimen/image_color_margin"
+                    app:image_color="@color/image_color_black" />
+
+                <com.hg.lib.edit.view.IMGColorRadio
+                    android:layout_width="@dimen/image_color"
+                    android:layout_height="@dimen/image_color"
+                    android:layout_margin="@dimen/image_color_margin"
+                    app:image_color="@color/image_color_white" />
+
+                <com.hg.lib.edit.view.IMGColorRadio
+                    android:layout_width="@dimen/image_color"
+                    android:layout_height="@dimen/image_color"
+                    android:layout_margin="@dimen/image_color_margin"
+                    app:image_color="@color/image_color_cyan" />
+
+                <com.hg.lib.edit.view.IMGColorRadio
+                    android:layout_width="@dimen/image_color"
+                    android:layout_height="@dimen/image_color"
+                    android:layout_margin="@dimen/image_color_margin"
+                    app:image_color="@color/image_color_yellow" />
+
+                <com.hg.lib.edit.view.IMGColorRadio
+                    android:layout_width="@dimen/image_color"
+                    android:layout_height="@dimen/image_color"
+                    android:layout_margin="@dimen/image_color_margin"
+                    app:image_color="@color/image_color_blue" />
+            </com.hg.lib.edit.view.IMGColorGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/image_mosaic_tip"
+                android:textColor="@color/image_color_white"
+                android:textSize="12sp" />
+
+        </ViewSwitcher>
+
+        <ImageButton
+            android:id="@+id/btn_undo"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@xml/edit_img_btn_undo"
+            android:contentDescription="@string/image_undo"
+            android:onClick="onClick" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_modes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@xml/edit_img_bg_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_doodle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@xml/edit_img_btn_doodle"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#FFF" />
+
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/image_text"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:src="@xml/edit_img_btn_text"
+            android:textColor="#FFF" />
+
+        <Space
+            android:layout_width="@dimen/image_mode_space"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_mosaic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@xml/edit_img_btn_mosaic"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#FFF" />
+
+        <Space
+            android:layout_width="@dimen/image_mode_space"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btn_clip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/image_clip"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:src="@xml/edit_img_btn_clip"
+            android:textColor="#FFF" />
+
+        <Space
+            android:layout_width="@dimen/image_mode_space"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@xml/edit_affirm_but_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:text="@string/image_done"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded" />
+
+    </RadioGroup>
+</LinearLayout>

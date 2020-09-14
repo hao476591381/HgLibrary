@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hg.lib">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".audio.AudioRecorderActy"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" /><!--录音界面-->
+        <activity
+            android:name=".file.FilePickerActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" /><!--文件夹-->
+        <activity android:name=".camera.CameraActivity" /><!--拍照界面-->
+        <activity
+            android:name=".edit.IMGEditActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" /><!--图片编辑-->
+        <activity
+            android:name=".album.AlbumActy"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" /><!--相册-->
+
+        <activity
+            android:name=".album.ImgPreviewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" /><!--图片预览-->
+
+        <activity android:name=".album.VideoPlayActivity" /><!--视频预览-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        tools:ignore="ManifestOrder" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

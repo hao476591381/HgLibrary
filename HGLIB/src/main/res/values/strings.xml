@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">HGLIB</string>
+    <string name="cancel">取消</string>
+    <string name="desc">desc</string>
+    <!--时间选择器-->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="time">时</string>
+    <string name="minute">分</string>
+    <string name="confirm">确认</string>
+
+    <!--语音-->
+    <string name="str_orecord_normal">按住说话</string>
+    <string name="str_orecord_recording">松开结束</string>
+    <string name="str_orecord_cancel">松开手指，取消发送</string>
+    <string name="str_recorder_label">手指上滑，取消发送</string>
+    <string name="a0000">00:00</string>
+    <string name="play_audio">播放</string>
+    <string name="stop_audio">停止</string>
+    <string name="quit_audio">退出</string>
+    <string name="pause_audio">暂停</string>
+    <string name="c0000">00:00</string>
+    <string name="save">保存</string>
+    <string name="editext_sz">0123456789</string>
+    <string name="editext_hint">请输入录音名称</string>
+    
+    <!--文件-->
+    <string name="Return_to_the_upper_level">返回上一层</string>
+    <string name="no_data">没有数据</string>
+    <string name="already_select">已选择：%s</string>
+    <string name="file_select_res">确定%s</string>
+    <string name="file_select_max">最多选择%d个文件</string>
+    <string name="The_local_file">本地文件</string>
+    <string name="Common_file">常用文件</string>
+    <string name="select_filesize">已选择：0KB</string>
+    <string name="confirm_filenum">确定(0/3)</string>
+
+    <!--图像编辑-->
+    <string name="image_doodle">涂鸦</string>
+    <string name="image_text">文字</string>
+    <string name="image_mosaic">马赛克</string>
+    <string name="image_clip">裁剪</string>
+    <string name="image_reset">还原</string>
+    <string name="image_done">完成</string>
+    <string name="image_rotate">旋转</string>
+    <string name="image_mosaic_tip">请直接在图片上涂抹虚化</string>
+    <string name="image_undo">撤销</string>
+    <string name="image_all_photo">所有照片</string>
+    <string name="image_original">原图</string>
+    <string name="image_preview">预览</string>
+    <string name="image_describe">图片描述</string>
+    <string name="is_add_text">这里输入文字</string>
+
+    <!--相册-->
+    <string name="img_and_video">图片视频</string>
+    <string name="You_can_use_your_camera_to_take_photos_or_videos">你可以使用相机拍摄照片或视频</string>
+    <string name="editor">编辑</string>
+    <string name="zero">0</string>
+    <string name="send">发送</string>
+    <string name="Please_select">请选择</string>
+
+</resources>

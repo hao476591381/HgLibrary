@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/img_edit_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.hg.lib.edit.view.IMGView
+            android:id="@+id/image_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <ViewSwitcher
+            android:id="@+id/vs_op"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inAnimation="@anim/album_fade_in"
+            android:outAnimation="@anim/album_fade_out">
+
+            <include layout="@layout/edit_img_opt_layout" />
+
+            <include layout="@layout/edit_img_clip_layout" />
+        </ViewSwitcher>
+
+        <ImageView
+            android:id="@+id/tv_cancel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/desc"
+            android:onClick="onClick"
+            android:src="@drawable/cancle_save_icon" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/camera_preview_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <!--相机预览视图-->
+        <FrameLayout
+            android:id="@+id/camera_preview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/E0DBDBDB" />
+
+        <!--顶部视图-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/flash_button"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/camera_light_off" />
+
+            <ImageView
+                android:id="@+id/switching_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/camera_switching_icon" />
+        </RelativeLayout>
+        <!--底部拍照按钮-->
+        <RelativeLayout
+            android:id="@+id/ll_photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/cancle_button"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/camera_cancel_icon" />
+
+            <ImageView
+                android:id="@+id/take_photo_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/camera_take_button" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

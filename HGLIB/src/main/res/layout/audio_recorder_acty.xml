@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/acty_title_bar_include" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#6D8CF6"
+        android:gravity="center"
+        android:text="@string/a0000"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_audioRecorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_voiceRecorder"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/tv_isRecorder"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/audio_start_icon"
+            android:contentDescription="@string/desc" />
+
+        <TextView
+            android:id="@+id/tv_isRecorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

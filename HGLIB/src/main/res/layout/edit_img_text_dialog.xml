@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+  <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/image_done"
+            android:textColor="@color/image_color_accent"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/is_add_text"
+        android:layout_centerVertical="true"
+        android:textColor="@color/image_color_primary"
+        android:textSize="24sp"
+        tools:ignore="Autofill,TextFields" />
+
+    <include layout="@layout/edit_img_color_layout" />
+
+</RelativeLayout>

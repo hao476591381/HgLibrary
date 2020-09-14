@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@xml/et_bar_shape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@xml/et_bar_shape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@xml/et_bar_shape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@xml/et_bar_shape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/select_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@xml/et_bar_shape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/select_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@xml/et_bar_shape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tree_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@xml/et_bar_shape"
+        android:drawableEnd="@drawable/jiantou_xia_icon"
+        android:gravity="center"
+        android:text="全部"
+        android:textSize="14sp" />
+
+    <com.hg.lib.audio.AudioRecorderButton
+        android:id="@+id/audio_but"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="5dp"
+        android:background="@xml/et_bar_shape"
+        android:text="@string/str_orecord_normal"
+        android:textColor="#727272" />
+
+    <Button
+        android:id="@+id/load_dlg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载dialog" />
+
+    <Button
+        android:id="@+id/dlgue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dialogue" />
+
+    <Button
+        android:id="@+id/dlg_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提示dialog" />
+
+    <Button
+        android:id="@+id/dlg_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择dialog" />
+
+    <Button
+        android:id="@+id/audio_acty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开录音界面" />
+
+    <Button
+        android:id="@+id/open_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文件夹" />
+
+    <Button
+        android:id="@+id/open_Camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/open_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="相册" />
+
+</LinearLayout>

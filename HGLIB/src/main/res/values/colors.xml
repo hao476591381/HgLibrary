@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="c0099ff">#0099ff</color>
+    <color name="c777777">#777777</color>
+    <color name="title_color">#37AEFF</color>
+    <!--文件-->
+    <color name="file_overlay_true">#80000000</color>
+    <color name="file_transparent_db">#E0DBDBDB</color>
+
+    <!--图片编辑-->
+    <color name="image_color_primary">#FFFFFF</color>
+    <color name="image_color_accent">#4CA1FB</color>
+    <color name="image_color_white">#FFFFFF</color>
+    <color name="image_color_black">#2B2B2B</color>
+    <color name="image_color_red">#FF5151</color>
+    <color name="image_color_cyan">#20FFCD</color>
+    <color name="image_color_yellow">#FFCC00</color>
+    <color name="image_color_blue">#0078FF</color>
+    <color name="c666666">#666666</color>
+    <color name="dddddd">#DDDDDD</color>
+    <color name="image_overlay_true">#80000000</color>
+    <color name="image_overlay_false">#20000000</color>
+    <color name="E0DBDBDB">#E0DBDBDB</color>
+
+    <!--相册-->
+    <color name="F0FFFFFF">#F0FFFFFF</color>
+    <color name="transparent_white">#F0FFFFFF</color>
+    <color name="transparent_db">#E0DBDBDB</color>
+</resources>

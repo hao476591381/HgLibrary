@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@xml/edit_img_bg_bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/ib_clip_rotate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:background="@xml/edit_img_btn_rotate"
+            android:contentDescription="@string/desc"
+            android:onClick="onClick" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="20dp">
+
+            <ImageButton
+                android:id="@+id/ib_clip_cancel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="40dp"
+                android:background="@xml/edit_img_btn_cancel"
+                android:contentDescription="@string/cancel"
+                android:onClick="onClick" />
+
+            <TextView
+                android:id="@+id/tv_clip_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:text="@string/image_reset"
+                android:textColor="@xml/edit_img_color_text"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/ib_clip_done"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="40dp"
+                android:background="@xml/edit_img_btn_ok"
+                android:contentDescription="@string/desc"
+                android:onClick="onClick"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
